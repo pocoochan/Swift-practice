@@ -8,12 +8,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var textfield: UITextField!
 
+    @IBOutlet weak var myPickerView: UIPickerView!
+    let compos = ["London", "Japan", "Paris", "Canada", "United States", "Argenina"]
+    
+    //ピッカービューのコンポーネントの個数を返す（１個になるはず）
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    //各コンポーネントの行数を返す
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        let compo = compos[component]
+        return compo.count
+    }
+
+    //指定のコンポーネントから指定行の項目を取り出す
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let item = compos[row]
+        return item
+    }
+    
+    //ドラムが回転して項目が選ばれたよ。rowが選択されたときの挙動
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let item = compos[row]
+        print("\(item)が選ばれた")
+        
+        textfield.text = compos[row]
+    }
+    
+    
     @IBAction func show(_ sender: UIButton) {
         var city: String = ""
         city = textfield.text!
@@ -68,6 +97,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        myPickerView.delegate = self
+        myPickerView.dataSource = self
         
     }
     
