@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Task_1_UIDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14l-Or-2iT">
+                                <rect key="frame" x="0.0" y="44" width="453" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hqd-Cq-Qmv"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="登録フォーム" id="4J2-la-SsM"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ニックネーム" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbd-7Z-dCZ">
+                                <rect key="frame" x="40" y="177" width="104" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="70P-om-6Ap"/>
+                                    <constraint firstAttribute="height" constant="20" id="Zmw-WS-9Ls"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ニックネームを入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TNn-90-3Rj">
+                                <rect key="frame" x="40" y="217" width="334" height="49"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="NP2-WZ-0Pg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ENr-KI-gud">
+                                <rect key="frame" x="40" y="371" width="334" height="178"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="XZD-2e-SkQ"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自己紹介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGN-tP-XJf">
+                                <rect key="frame" x="40" y="330" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="AMT-dq-ah9"/>
+                                    <constraint firstAttribute="height" constant="21" id="l7C-fJ-MG2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo-quelcode" translatesAutoresizingMaskIntoConstraints="NO" id="oKb-PZ-Hvm">
+                                <rect key="frame" x="87" y="128" width="240" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="84U-6o-2q8"/>
+                                    <constraint firstAttribute="width" constant="240" id="UfM-W1-jvq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="b1T-iF-xez"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="m3H-Tn-ZJF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3H-aL-ltY">
+                                <rect key="frame" x="87" y="625" width="240" height="48"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="275-IP-O7w"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="HNR-Es-IVp"/>
+                                    <constraint firstAttribute="width" constant="240" id="Kjf-tX-LQR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="Ze1-C0-v7t"/>
+                                </constraints>
+                                <state key="normal" title="登録する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JGN-tP-XJf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="3dr-cJ-tMR"/>
+                            <constraint firstItem="oKb-PZ-Hvm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3nw-9Q-4Z7"/>
+                            <constraint firstItem="R3H-aL-ltY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5Lg-hJ-bHV"/>
+                            <constraint firstItem="TNn-90-3Rj" firstAttribute="top" secondItem="Vbd-7Z-dCZ" secondAttribute="bottom" constant="20" id="6zf-KT-vFP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="R3H-aL-ltY" secondAttribute="bottom" constant="189" id="Aqh-Ed-btW"/>
+                            <constraint firstItem="14l-Or-2iT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B2S-4f-CnG"/>
+                            <constraint firstItem="oKb-PZ-Hvm" firstAttribute="top" secondItem="14l-Or-2iT" secondAttribute="bottom" constant="40" id="CLE-5D-xN4"/>
+                            <constraint firstItem="ENr-KI-gud" firstAttribute="top" secondItem="JGN-tP-XJf" secondAttribute="bottom" constant="20" id="GkP-Dt-ZZZ"/>
+                            <constraint firstItem="Vbd-7Z-dCZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="JfU-wo-emY"/>
+                            <constraint firstItem="Vbd-7Z-dCZ" firstAttribute="top" secondItem="oKb-PZ-Hvm" secondAttribute="bottom" constant="25" id="XLp-6F-txd"/>
+                            <constraint firstItem="R3H-aL-ltY" firstAttribute="top" secondItem="ENr-KI-gud" secondAttribute="bottom" constant="76" id="ax9-bH-nE4"/>
+                            <constraint firstItem="14l-Or-2iT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b5S-ew-2cs"/>
+                            <constraint firstItem="ENr-KI-gud" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="b9F-Oq-jrk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TNn-90-3Rj" secondAttribute="trailing" constant="40" id="cV4-xx-pB9"/>
+                            <constraint firstItem="oKb-PZ-Hvm" firstAttribute="top" secondItem="14l-Or-2iT" secondAttribute="bottom" constant="40" id="dpa-7V-fnz"/>
+                            <constraint firstItem="Vbd-7Z-dCZ" firstAttribute="top" secondItem="oKb-PZ-Hvm" secondAttribute="bottom" constant="25" id="fmY-hz-jnx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ENr-KI-gud" secondAttribute="trailing" constant="40" id="fq7-5y-e1l"/>
+                            <constraint firstItem="14l-Or-2iT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="igC-cL-xb8"/>
+                            <constraint firstItem="ENr-KI-gud" firstAttribute="top" secondItem="JGN-tP-XJf" secondAttribute="bottom" constant="20" id="jiF-Uq-yl0"/>
+                            <constraint firstItem="14l-Or-2iT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mgV-kl-QLv"/>
+                            <constraint firstItem="TNn-90-3Rj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="tmc-3m-6oy"/>
+                            <constraint firstItem="JGN-tP-XJf" firstAttribute="top" secondItem="TNn-90-3Rj" secondAttribute="bottom" constant="64" id="zHo-IV-aRA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102.89855072463769" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo-quelcode" width="200" height="31"/>
+    </resources>
+</document>
